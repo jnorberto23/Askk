@@ -1,6 +1,8 @@
 const express = require("express");
 const app = express();
 const bodyParser = require("body-parser")
+const perguntaModal = require("./database/Pergunta");
+
 
 // Carregando o objeto de conexao
 const connection = require("./database/database");
