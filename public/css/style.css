@@ -1,0 +1,12 @@
+body{
+    background-color: #eceff1;
+}
+
+.img-brand{
+    width: 35px;
+    height: 35px;
+}
+
+#form-pergunta{
+    margin-top: 5vh;
+}
