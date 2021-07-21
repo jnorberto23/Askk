@@ -2,9 +2,8 @@ const express = require("express");
 const app = express();
 const bodyParser = require("body-parser")
 
-// Estou carregando o objeto de conexao
+// Carregando o objeto de conexao
 const connection = require("./database/database");
-
 
 // Promisse para conexão
 connection
@@ -16,9 +15,10 @@ connection
         console.log(msgErro);
     })
 
-// Estou dizendo para o Express usar o EJS como View engine
+// Setando o Express para usar o EJS como View engine
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
+
 // Body parser
 app.use(bodyParser.urlencoded({
     extended: false
